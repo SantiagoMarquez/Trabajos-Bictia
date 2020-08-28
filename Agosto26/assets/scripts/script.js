@@ -54,43 +54,28 @@
 //     }
 // }
 
-//ejercicio
-let n1 = prompt("ingrese el primer numero")
-let n2 = prompt("ingrese el segundo numero")
-let op = prompt("ingrese el signo de la operacion a realizar (+,-,/,*)")
-let result
 
+// Calculadora
 
-
-if (op == '+') {
-    suma(n1,n2)
-}else if( op == '-'){
-    resta(n1,n2)
-}else if( op == '/'){
-    div(n1,n2)
-}else if( op == '*'){
-    multi(n1,n2)
-}else{
-    alert("opcion no valida")
-    console.log("opcion no valida")
-}
-
-function suma(n1, n2){
-    result = parseInt(n1)+parseInt(n2)
-    alert(result)
-}
-
-function resta(n1, n2){
-    result = parseInt(n1)-parseInt(n2) 
-    alert(result)
-}
-
-function multi(n1, n2){
-    result = parseInt(n1)*parseInt(n2)
-    alert(result)
-}
-
-function div(n1, n2){
-    result = parseInt(n1)/parseInt(n2)
-    alert(result)
+function signo(op) {
+    let n1 = parseInt(document.getElementById('num1').value)
+    let n2 = parseInt(document.getElementById('num2').value)
+    let resultado = document.getElementById('result')
+    switch (op) {
+        case '+':
+            resultado.innerText = n1 + n2
+            break;
+        case '-':
+            resultado.innerText = n1 - n2
+            break;
+        case '*':
+            resultado.innerText = n1 * n2
+            break;
+        case '/':
+            resultado.innerText = n1 / n2;
+            break;
+        default:
+            alert("Operacion no valida")
+            break;
+    }
 }

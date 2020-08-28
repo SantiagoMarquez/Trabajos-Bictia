@@ -1,9 +1,60 @@
-body{
-    margin: 0;
+*{
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    background-color: rgb(124, 37, 37);
+}
 
-.tab{
-    border: 5px solid;
-    text-align: center;
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 91, 91);
+    border: 1px solid;
+    border-radius: 1em;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+}
+
+.in{
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 20px;
+    height: 30px;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 1em;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.but{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(190, 81, 81);
+    font-size: 1.2em;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 20px;
 }

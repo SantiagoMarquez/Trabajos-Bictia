@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agosto26</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- <button onclick="diaSemana('lunes')">Lunes</button>
-    <button onclick="diaSemana('martes')">Martes</button>
-    <button onclick="diaSemana('miercoles')">Miercoles</button>
-    <button onclick="diaSemana('jueves')">Jueves</button>
-    <button onclick="diaSemana('viernes')">Viernes</button>
-    <button onclick="diaSemana('sabado')">Sabado</button>
-    <button onclick="diaSemana('domingo')">Domingo</button> -->
-
-    <input type="number" id="numb1">
-    <table class="tab"> 
-        <td colspan="4"></td>
-    </table>
-
-    <button onclick="numero(1)">1</button>
-    <button onclick="numero(2)">2</button>
-    <button onclick="numero(3)">3</button>
-    <button onclick="numero(4)">4</button>
-    <button onclick="numero(5)">5</button>
-    <button onclick="numero(6)">6</button>
-    <button onclick="numero(7)">7</button>
-    <button onclick="numero(8)">8</button>
-    <button onclick="numero(9)">9</button>
-    <button onclick="numero(0)">0</button>
-    <button onclick="signo('+')">+</button>
-    <button onclick="signo('+')">-</button>
-    <button onclick="signo('-')">*</button>
-    <button onclick="signo('/')">/</button>
-    <button onclick="signo('=')">=</button>
+    <header class="header">
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <section class="main">
+            <article>
+                <input class="in" type="number" id="num1">
+                <input class="in" type="number" id="num2">
+            </article>
+            <article class="btn">
+                <button class="but" onclick="signo('+')">+</button>
+                <button class="but" onclick="signo('-')">-</button>
+                <button class="but" onclick="signo('*')">*</button>
+                <button class="but" onclick="signo('/')">/</button>
+            </article>
+            <article class="result">
+                <span id="result">Resultado: </span>  
+            </article>
+        </section>    
+    </main>
     <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
