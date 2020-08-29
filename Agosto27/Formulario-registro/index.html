@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aagosto 27</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+    <form class="formContact" onsubmit="validarForm(event)" >
+        <h2 style="text-align: center;">Registro</h2>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Nombre" id="name">
+          <small id="mensajeAlertaNombre"></small>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Apellido" id="lname">
+            <small id="mensajeAlertaApellido"></small>
+          </div>
+      
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input class="input-field" type="email" placeholder="Correo" id="email">
+          <small id="mensajeAlertaCorreo"></small>
+        </div>
+        
+        <div class="input-container">
+          <i class="fa fa-key icon"></i>
+          <input class="input-field" type="password" placeholder="Contrasena" id="passw">
+          <small id="mensajeAlertaContrasena"></small>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-calendar-check-o icon"></i>
+            <input class="input-field" type="number" placeholder="Edad" id="age">
+            <small id="mensajeAlertaEdad"></small>
+        </div>
+        <div>
+            <label for="inputTyC"> <input type="checkbox" id="inputTyC"> Acepta terminos y condiciones</label>
+        </div>
+        <small id="mensajeAlertaTyC"></small>
+        <div style="text-align: center; margin: 1em;">
+            <button type="submit" value="Enviar" class="btn">Register</button>
+        </div>
+    </form>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aagosto 27</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form class="formContact" onsubmit="validarForm(event)">
+        <div class="contInput">
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre" id="name">
+            <small id="mensajeAlertaNombre"></small>
+        </div>
+        <div class="contInput">
+            <label for="">Apellido</label>
+            <input type="text" placeholder="Ingrese su apellido" id="lname">
+            <small id="mensajeAlertaApellido"></small>            
+        </div>        
+        <div class="contInput">
+            <label for="">Correo</label>
+            <input type="email" placeholder="Ingrese su correo" id="email">
+            <small id="mensajeAlertaCorreo"></small>
+        </div>
+        <div class="contInput">
+            <label for="">Contrasena</label>
+            <input type="password" placeholder="Ingrese su contrasena" id="passw">
+            <small id="mensajeAlertaContrasena"></small>
+        </div>        
+        <div class="contInput">
+            <label for="">Edad</label>
+            <input type="number" placeholder="Ingrese su edad" id="age">
+            <small id="mensajeAlertaEdad"></small>
+        </div>
+        <div class="contInput inputTyC">
+            <label for="inputTyC">Acepta terminos y condiciones</label>
+            <input type="checkbox" id="inputTyC">
+        </div>
+        <small id="mensajeAlertaTyC"></small>
+        <input type="submit" value="Enviar" class="btnEnviar">        
+    </form>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
