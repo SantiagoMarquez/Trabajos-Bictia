@@ -1,0 +1,51 @@
+/* .tit {
+    background-color: blue;
+    color: white;
+    height: 100px;
+}
+
+.mai {
+    background-color: red;
+    color: white;
+    height: 600px;
+}
+
+.asi {
+    background-color: rgb(255, 231, 19);
+    color: white;
+    height: 600px;
+}
+
+.foo {
+    background-color: rgb(32, 238, 77);
+    color: white;
+    height: 100px;
+} */
+
+.hd {
+    background-color: rebeccapurple;
+    height: 100px;
+}
+
+.art {
+    background-color: silver;
+    height: 400px;
+    margin-top: 10px;
+}
+
+.sd {
+    background-color: plum;
+    text-align: center;
+}
+
+.cont {
+    justify-content: space-between;
+}
+
+.ft {
+    background-color: royalblue;
+}
+
+.columnas-separadas>div {
+    margin: 0.5em auto;
+}
