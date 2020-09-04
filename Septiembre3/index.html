@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container cont">
+        <h2>Propiedad: d-flex</h2>
+        <br>
+        <h3>Propiedad: flex-row</h3>
+        <div class="fila d-flex">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: flex-column</h3>
+        <div class="fila d-flex flex-column">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: justify-content-between</h3>
+        <div class="fila d-flex justify-content-between">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: justify-content-end</h3>
+        <div class="fila d-flex justify-content-end">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: justify-content-start</h3>
+        <div class="fila d-flex justify-content-start">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: justify-content-around</h3>
+        <div class="fila d-flex justify-content-around">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Propiedad: justify-content-center</h3>
+        <div class="fila d-flex justify-content-center">
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+            <div class="columna">soy un div</div>
+        </div>
+        <hr>
+        <h3>Pratica con .row</h3>
+        <div class="row justify-content-between">
+            <div class="col-3 miCol"></div>
+            <div class="col-3 miCol"></div>
+            <div class="col-3 miCol"></div>
+        </div>
+        <hr>
+        <h3>Propiedad: flex-column</h3>
+        <div class="fila d-flex heightProp flex-column">
+            <div class="columna widthProp">soy un div</div>
+            <div class="columna widthProp">soy un div</div>
+            <div class="columna widthProp">soy un div</div>
+        </div>
+        <h3>Propiedad: align-items-end & justify-content-center</h3>
+        <div class="fila d-flex heightProp justify-content-center align-items-end">
+            <div class="miCol align-self-start">align-self-start</div>
+            <div class="miCol align-self-center">align-self-center</div>
+            <div class="miCol ">align-self-end</div>
+        </div>
+        <h3>Propiedad: align-items-end & justify-content-between</h3>
+        <div class="fila d-flex heightProp justify-content-between  align-items-end">
+            <div class="miCol align-self-end">align-self-end</div>
+            <div class="miCol align-self-start">align-self-start</div>
+            <div class="miCol align-self-end">align-self-end</div>
+        </div>
+        <hr>
+        <h3>Practica: Caras dado</h3>
+        <div class="container" style="background-color: gray; padding: 20px;">
+            <div class="d-flex justify-content-around mt-5">
+                <!-- Una cara -->
+                <div class="caraDado d-flex justify-content-center align-items-center">
+                    <div class="punto"></div>
+                </div>
+                <!-- Dos caras -->
+                <div class="caraDado d-flex flex-column justify-content-between">
+                    <div class="punto align-self-end marg"></div>
+                    <div class="punto marg"></div>
+                </div>
+                <!-- Tres caras -->
+                <div class="caraDado d-flex flex-column justify-content-between">
+                    <div class="punto align-self-end marg"></div>
+                    <div class="punto align-self-center"></div>
+                    <div class="punto marg"></div>
+                </div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+                <!-- Cuatro caras -->
+                <div class="caraDado d-flex justify-content-between flex-column">
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <div class="punto align-self-end"></div>
+                    </div>
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <div class="punto align-self-end"></div>
+                    </div>
+                </div>
+                <!-- Cinco caras -->
+                <div class="caraDado d-flex justify-content-between flex-column">
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <div class="punto align-self-end"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="punto align-self-center"></div>
+                    </div>
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <div class="punto align-self-end"></div>
+                    </div>
+                </div>
+                <!-- Seis caras -->
+                <!-- <div class="caraDado d-flex justify-content-between align-items-end">
+                <div class="punto align-self-start"></div>
+                <div class="punto align-self-center"></div>
+                <div class="punto align-self-end"></div>
+                <div class="punto align-self-start"></div>
+                <div class="punto align-self-center"></div>
+                <div class="punto align-self-end"></div>
+            </div> -->
+                <div class="caraDado d-flex justify-content-between flex-column">
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <!-- <div class="punto align-self-center"></div> -->
+                        <div class="punto align-self-end"></div>
+                    </div>
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <div class="punto align-self-end"></div>
+                    </div>
+                    <div class="d-flex justify-content-between marg">
+                        <div class="punto align-self-start"></div>
+                        <!-- <div class="punto align-self-center"></div> -->
+                        <div class="punto align-self-end"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
