@@ -1,0 +1,18 @@
+{
+    'name': "Carlos",
+    'edad': 33,
+    'barrio': "castilla",
+    'hobbies': [
+        "ver tv",
+        "jugar"
+    ]
+    'padres': {
+        'name': "sr andres"
+        'edad': 60,
+        'barrio': "castilla"
+        'hobbies': [
+            "leer",
+            "comer"
+        ]
+    }
+}
