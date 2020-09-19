@@ -1,0 +1,15 @@
+.text {
+    font-size: 1.5em;
+}
+
+.logo {
+    width: 90px;
+}
+
+.tit {
+    color: rgb(0, 20, 202);
+}
+
+.tab {
+    border-radius: 20px;
+}
