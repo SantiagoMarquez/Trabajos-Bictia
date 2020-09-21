@@ -5,74 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teclado</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <div class="container cont1">
-        <div class="container">
-            <p class="mensaje" id="mensaje"></p>
-        </div>
-        <!-- <button id="letra">A</button>
-    <button id="letraB">B</button> -->
-        <div class="container cont2">
-            <button type="button" class="btn btn-dark bot1 letra">1</button>
-            <button type="button" class="btn btn-dark bot1 letra">2</button>
-            <button type="button" class="btn btn-dark bot1 letra">3</button>
-            <button type="button" class="btn btn-dark bot1 letra">4</button>
-            <button type="button" class="btn btn-dark bot1 letra">5</button>
-            <button type="button" class="btn btn-dark bot1 letra">6</button>
-            <button type="button" class="btn btn-dark bot1 letra">7</button>
-            <button type="button" class="btn btn-dark bot1 letra">8</button>
-            <button type="button" class="btn btn-dark bot1 letra">9</button>
-            <button type="button" class="btn btn-dark bot1 letra">0</button>
-            <button type="button" class="btn btn-dark bot1 letra">A</button>
-            <button type="button" class="btn btn-dark bot1 letra">B</button>
-            <button type="button" class="btn btn-dark bot1 letra">C</button>
-            <button type="button" class="btn btn-dark bot1 letra">D</button>
-            <button type="button" class="btn btn-dark bot1 letra">E</button>
-            <button type="button" class="btn btn-dark bot1 letra">F</button>
-            <button type="button" class="btn btn-dark bot1 letra">G</button>
-            <button type="button" class="btn btn-dark bot1 letra">H</button>
-            <button type="button" class="btn btn-dark bot1 letra">I</button>
-            <button type="button" class="btn btn-dark bot1 letra">J</button>
-            <button type="button" class="btn btn-dark bot1 letra">K</button>
-            <button type="button" class="btn btn-dark bot1 letra">L</button>
-            <button type="button" class="btn btn-dark bot1 letra">M</button>
-            <button type="button" class="btn btn-dark bot1 letra">N</button>
-            <button type="button" class="btn btn-dark bot1 letra">O</button>
-            <button type="button" class="btn btn-dark bot1 letra">P</button>
-            <button type="button" class="btn btn-dark bot1 letra">Q</button>
-            <button type="button" class="btn btn-dark bot1 letra">R</button>
-            <button type="button" class="btn btn-dark bot1 letra">S</button>
-            <button type="button" class="btn btn-dark bot1 letra">T</button>
-            <button type="button" class="btn btn-dark bot1 letra">U</button>
-            <button type="button" class="btn btn-dark bot1 letra">V</button>
-            <button type="button" class="btn btn-dark bot1 letra">W</button>
-            <button type="button" class="btn btn-dark bot1 letra">X</button>
-            <button type="button" class="btn btn-dark bot1 letra">Y</button>
-            <button type="button" class="btn btn-dark bot1 letra">Z</button>
-            <button type="button" class="btn btn-dark bot1 letra">,</button>
-            <button type="button" class="btn btn-dark bot1 letra">.</button>
-            <button type="button" class="btn btn-info bot1 letra">space</button>
-            <button type="button" class="btn btn-info bot1 letra">
-                <-- </button> </div> </div> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                    crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="./assets/scripts/script.js">
-                    </script>
-</body>
 
+    <div class="container" style="padding-top: 4rem;">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="myform form">
+            <div  style="text-align: center;">
+              <h1>Login</h1>
+            </div>
+            <form action="./index.html">
+              <div class="form-group">
+                <label for="correo">Correo electronico</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
+              </div>
+              <div class="form-group">
+                <label for="contr">Contrasena</label>
+                <input type="password" class="form-control" id="contr" name="contr" placeholder="Ingrese su contrasena" required>
+              </div>
+              <div class="form-group">
+                <p class="text-center">
+                  Al iniciar sesion aceptas los <a href="#">Términos y condiciones</a></p>
+              </div>
+              <div class="col-md-12" style="text-align: center;">
+                <button type="submit" class="btn btn-block btn-primary">Login</button>
+              </div>
+              <div class="col-md-12">
+                <div class="login-or">
+                  <hr class="hr-or">
+                  <span class="span-or">o</span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  <a href="#" class="google btn"><i class="fa fa-google-plus">
+                    </i> Iniciar sesion con Google
+                  </a>
+                </p>
+              </div>
+              <div class="form-group">
+                <p style="text-align: center;">No tienes una cuenta?
+                 <a href="./assets/pages/signup.html" id="signup">Registrate</a> 
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous">
+    </script>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
 </html>
