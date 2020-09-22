@@ -1,6 +1,6 @@
 const formRegistro = document.getElementById('formRegistro')
 
-let listaDeUsuarioss = [];
+let listaDeUsuarios = [];
 
 formRegistro.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -24,6 +24,10 @@ formRegistro.addEventListener('submit', (e) => {
         confContr: inputConfContr
     }
     guardarEnStorage(usuario)
+    swal("Exito", "Usuario registrado", "success");
+    setTimeout(() => {
+        window.location = '../../index.html'
+    }, 2000)
 })
 
 const guardarEnStorage = (usuario) => {

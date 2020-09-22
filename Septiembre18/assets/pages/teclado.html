@@ -13,12 +13,19 @@
 
 <body>
     <div class="container cont1">
-        <!-- <div class="container">
-            <p class="mensaje" id="mensaje"></p>
-        </div> -->
+        <div class="col">
+            <img class="image" src="../images/icon.png" alt="">
+            <h1 class="tit">hola</h1>
+            <h2 class="tit" id="nombre"></h2>
+            <button class="btn btn-danger"><a class="bot3" href="../../index.html">Cerrar Sesion</a></button>
+        </div>
+
         <!-- <button id="letra">A</button>
     <button id="letraB">B</button> -->
-        <!-- <div class="container cont2">
+        <div class="container cont2">
+            <div class="container">
+                <p class="mensaje" id="mensaje"></p>
+            </div>
             <button type="button" class="btn btn-dark bot1 letra">1</button>
             <button type="button" class="btn btn-dark bot1 letra">2</button>
             <button type="button" class="btn btn-dark bot1 letra">3</button>
@@ -58,21 +65,30 @@
             <button type="button" class="btn btn-dark bot1 letra">,</button>
             <button type="button" class="btn btn-dark bot1 letra">.</button>
             <button type="button" class="btn btn-info bot1 letra">space</button>
-            <button type="button" class="btn btn-info bot1 letra">
-                <-- </button> </div> </div> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                    crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                        crossorigin="anonymous">
-                    </script>
-                    <script src="../scripts/script.js">
-                    </script> -->
+            <button type="button" class="btn btn-info bot1 letra">del </button>
+            <button id="btnList" class="btn bot2 btn-secondary">Añadir
+                Tarea</button>
+        </div>
+        <div class="container py-5">
+            <h5 class="tit text-center">Tareas pendientes</h5>
+            <div class="lista text-left">
+                <ul id="lista"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="../scripts/script.js">
+    </script>
 </body>
 
 </html>

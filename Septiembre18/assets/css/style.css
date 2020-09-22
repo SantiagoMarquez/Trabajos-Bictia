@@ -1,5 +1,5 @@
 .mensaje {
-    height: 150px;
+    height: 50px;
     background-color: #f4f4f4;
     border-radius: 20px;
     margin-top: 20px;
@@ -31,4 +31,30 @@
     height: 60px;
     border-radius: 30%;
     margin: 10px;
+}
+
+.bot2 {
+    width: 160px;
+    height: 60px;
+    border-radius: 30%;
+    margin: 10px;
+}
+
+.bot3 {
+    text-decoration: none;
+    color: white;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.tit {
+    color: white;
+}
+
+.lista {
+    background-color: whitesmoke;
+    border-radius: 20px;
 }

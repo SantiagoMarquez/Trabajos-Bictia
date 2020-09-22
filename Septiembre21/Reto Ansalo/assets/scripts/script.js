@@ -23,16 +23,16 @@ const teclado = (e) => {
         arrayLetras.push(aux2)
     }
     //B
-    else if (arrayLetras[arrayLetras.length - 1] == "A" && aux2 != "B" && jQuery.isEmptyObject(arrayLetras) != true) {
+    else if (arrayLetras[arrayLetras.length - 1] == "A" && aux2 != "B") {
         swal("Error!", "Por favor ingrese la letra B", "error");
-    } else if (arrayLetras[arrayLetras.length - 1] == "A" && aux2 == "B" && jQuery.isEmptyObject(arrayLetras) != true) {
+    } else if (arrayLetras[arrayLetras.length - 1] == "A" && aux2 == "B") {
         mensaje.innerText += aux2
         arrayLetras.push(aux2)
     }
     //C
-    else if (arrayLetras[arrayLetras.length - 1] == "B" && aux2 != "C" && jQuery.isEmptyObject(arrayLetras) != true) {
+    else if (arrayLetras[arrayLetras.length - 1] == "B" && aux2 != "C") {
         swal("Error!", "Por favor ingrese la letra C", "error");
-    } else if (arrayLetras[arrayLetras.length - 1] == "B" && aux2 == "C" && jQuery.isEmptyObject(arrayLetras) != true) {
+    } else if (arrayLetras[arrayLetras.length - 1] == "B" && aux2 == "C") {
         mensaje.innerText += aux2
         arrayLetras.push(aux2)
     }
