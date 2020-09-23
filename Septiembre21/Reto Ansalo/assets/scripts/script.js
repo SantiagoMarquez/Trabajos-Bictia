@@ -17,7 +17,6 @@ const teclado = (e) => {
     //A
     if (jQuery.isEmptyObject(arrayLetras) == true && aux2 != "A") {
         swal("Error!", "Por favor ingrese la letra A", "error");
-
     } else if (jQuery.isEmptyObject(arrayLetras) == true && aux2 == "A") {
         mensaje.innerText += aux2
         arrayLetras.push(aux2)
@@ -169,3 +168,75 @@ document.getElementById('limpiar').addEventListener('click', () => {
     arrayLetras.length = 0
     arrayNumeros.length = 0
 })
+
+/////////////////////////////////////////////////////////////
+
+const btnDark = document.getElementById('dark')
+const btnRetro = document.getElementById('retro')
+const container = document.getElementById('container')
+const titulo = document.getElementById('titulo')
+const lab = document.getElementById('lab')
+const lab2 = document.getElementById('lab2')
+
+//Tema dark
+btnDark.addEventListener('click', () => {
+
+    let aux = $('.toggle-trigger1').prop('checked')
+    if (aux == true) {
+        $('.toggle-trigger').prop('checked', false).change()
+        container.className = "container dark"
+        titulo.className = "tit text-center"
+        lab.className = "custom-control-label tit"
+        lab2.className = "custom-control-label tit"
+        localStorage.setItem('tema', "dark")
+    } else {
+        $('.toggle-trigger').prop('checked', false).change()
+        $('.toggle-trigger1').prop('checked', false).change()
+        container.className = "container light"
+        titulo.className = "tit text-center"
+        lab.className = "custom-control-label tit"
+        lab2.className = "custom-control-label tit"
+        localStorage.setItem('tema', "light")
+    }
+})
+
+//Tema retro
+btnRetro.addEventListener('click', () => {
+
+    let aux = $('.toggle-trigger').prop('checked')
+    if (aux == true) {
+        $('.toggle-trigger1').prop('checked', false).change()
+        container.className = "container retro"
+        titulo.className = "tit2 text-center"
+        lab.className = "custom-control-label tit2"
+        lab2.className = "custom-control-label tit2"
+        localStorage.setItem('tema', "retro")
+    } else {
+        $('.toggle-trigger').prop('checked', false).change()
+        $('.toggle-trigger1').prop('checked', false).change()
+        container.className = "container light"
+        titulo.className = "tit text-center"
+        lab.className = "custom-control-label tit"
+        lab2.className = "custom-control-label tit"
+        localStorage.setItem('tema', "light")
+    }
+})
+
+const MantenerColor = () => {
+    const temaGuardado = localStorage.getItem('tema')
+    console.log(temaGuardado, "este es el tema")
+    if (temaGuardado == "dark") {
+        document.getElementById('container').classList.remove('light')
+        document.getElementById('container').classList.remove('retro')
+        document.getElementById('container').classList.add('dark')
+    } else if (temaGuardado == "retro") {
+        document.getElementById('container').classList.remove('dark')
+        document.getElementById('container').classList.remove('light')
+        document.getElementById('container').classList.add('retro')
+    } else if (temaGuardado == "light") {
+        document.getElementById('container').classList.remove('dark')
+        document.getElementById('container').classList.remove('retro')
+        document.getElementById('container').classList.add('light')
+    }
+}
+MantenerColor()
