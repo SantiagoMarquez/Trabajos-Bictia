@@ -174,13 +174,9 @@ document.getElementById('limpiar').addEventListener('click', () => {
 const btnDark = document.getElementById('dark')
 const btnRetro = document.getElementById('retro')
 const container = document.getElementById('container')
-const titulo = document.getElementById('titulo')
-const lab = document.getElementById('lab')
-const lab2 = document.getElementById('lab2')
 
 //Tema dark
 btnDark.addEventListener('click', () => {
-
     let aux = $('.toggle-trigger1').prop('checked')
     if (aux == true) {
         $('.toggle-trigger').prop('checked', false).change()
@@ -202,22 +198,15 @@ btnDark.addEventListener('click', () => {
 
 //Tema retro
 btnRetro.addEventListener('click', () => {
-
     let aux = $('.toggle-trigger').prop('checked')
     if (aux == true) {
         $('.toggle-trigger1').prop('checked', false).change()
         container.className = "container retro"
-        titulo.className = "tit2 text-center"
-        lab.className = "custom-control-label tit2"
-        lab2.className = "custom-control-label tit2"
         localStorage.setItem('tema', "retro")
     } else {
         $('.toggle-trigger').prop('checked', false).change()
         $('.toggle-trigger1').prop('checked', false).change()
         container.className = "container light"
-        titulo.className = "tit text-center"
-        lab.className = "custom-control-label tit"
-        lab2.className = "custom-control-label tit"
         localStorage.setItem('tema', "light")
     }
 })
