@@ -211,7 +211,7 @@ btnRetro.addEventListener('click', () => {
     }
 })
 
-const MantenerColor = () => {
+const ColorEnStorage = () => {
     const temaGuardado = localStorage.getItem('tema')
     console.log(temaGuardado, "este es el tema")
     if (temaGuardado == "dark") {
@@ -228,4 +228,4 @@ const MantenerColor = () => {
         document.getElementById('container').classList.add('light')
     }
 }
-MantenerColor()
+ColorEnStorage()
