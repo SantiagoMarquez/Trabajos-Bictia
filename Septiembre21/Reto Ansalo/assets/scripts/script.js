@@ -162,7 +162,7 @@ for (let letra of letras) {
 }
 
 document.getElementById('limpiar').addEventListener('click', () => {
-    localStorage.clear()
+    // localStorage.clear()
     mensaje.innerHTML = ''
     mensaje2.innerHTML = ''
     arrayLetras.length = 0
@@ -181,17 +181,11 @@ btnDark.addEventListener('click', () => {
     if (aux == true) {
         $('.toggle-trigger').prop('checked', false).change()
         container.className = "container dark"
-        titulo.className = "tit text-center"
-        lab.className = "custom-control-label tit"
-        lab2.className = "custom-control-label tit"
         localStorage.setItem('tema', "dark")
     } else {
         $('.toggle-trigger').prop('checked', false).change()
         $('.toggle-trigger1').prop('checked', false).change()
         container.className = "container light"
-        titulo.className = "tit text-center"
-        lab.className = "custom-control-label tit"
-        lab2.className = "custom-control-label tit"
         localStorage.setItem('tema', "light")
     }
 })
@@ -218,14 +212,20 @@ const ColorEnStorage = () => {
         document.getElementById('container').classList.remove('light')
         document.getElementById('container').classList.remove('retro')
         document.getElementById('container').classList.add('dark')
+        $('.toggle-trigger').prop('checked', false).change()
+        $('.toggle-trigger1').prop('checked', true).change()
     } else if (temaGuardado == "retro") {
         document.getElementById('container').classList.remove('dark')
         document.getElementById('container').classList.remove('light')
         document.getElementById('container').classList.add('retro')
+        $('.toggle-trigger').prop('checked', true).change()
+        $('.toggle-trigger1').prop('checked', false).change()
     } else if (temaGuardado == "light") {
         document.getElementById('container').classList.remove('dark')
         document.getElementById('container').classList.remove('retro')
         document.getElementById('container').classList.add('light')
+        $('.toggle-trigger').prop('checked', false).change()
+        $('.toggle-trigger1').prop('checked', false).change()
     }
 }
 ColorEnStorage()
