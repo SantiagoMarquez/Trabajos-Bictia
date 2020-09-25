@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+	<div id="app">
+		<div id="calc">
+			<section class="title">
+				<span class="title2">Calculator</span>
+				<div class="ctrl-btns">
+					<div class="ctrl-btn">
+						&#8212;
+					</div>
+					<div class="ctrl-btn">
+						&#x2610;
+					</div>
+					<div class="ctrl-btn close">
+						&#x2715;
+					</div>
+			</section>
+			<section class="menu">
+				<div class="btn menu-btn">
+					&#9776;
+				</div>
+				<span class="title3">Standard</span>
+				<div class="btn history-btn">
+					&#x21ba;
+				</div>
+			</section>
+
+			<section class="display">
+				<div class="prev-operation">
+					<p id="previous-operation-display"></p>
+				</div>
+				<div class="curr-operation">
+					<span class="currOp" id="display-current">0</span>
+				</div>
+			</section>
+
+			<section class="mem-btns">
+				<div class="btn">
+					<span>MC</span>
+				</div>
+				<div class="btn">
+					<span>MR</span>
+				</div>
+				<div class="btn">
+					<span>M+</span>
+				</div>
+				<div class="btn">
+					<span>M-</span>
+				</div>
+				<div class="btn">
+					<span>MS</span>
+				</div>
+				<div class="btn">
+					<span>M&#x25bc;</span>
+				</div>
+			</section>
+
+			<section class="buttons">
+				<div onclick="currentOp('%')" class="btn" id="percent">%</div>
+				<div onclick="clearEntryButton()" class="btn" id="clear-entry">CE</div>
+				<div onclick="clearButton()" class="btn" id="clear">C</div>
+				<div onclick="currentOp('backspace')" class="btn" id="backspace">&#x232b;</div>
+				<div onclick="currentOp('oneOver')" class="btn" id="one-over">1/&#x1d4cd;</div>
+				<div onclick="currentOp('square')" class="btn" id="square">&#x1d4cd;&#xb2;</div>
+				<div onclick="currentOp('sqrt')" class="btn" id="square-root">&#x221a;</div>
+				<div onclick="operationButton('/')" class="btn" id="divide">&#xf7;</div>
+				<div onclick="numberButton('7')" class="btn num" id="seven">7</div>
+				<div onclick="numberButton('8')" class="btn num" id="eight">8</div>
+				<div onclick="numberButton('9')" class="btn num" id="nine">9</div>
+				<div onclick="operationButton('*')" class="btn" id="multiply">&#x2715;</div>
+				<div onclick="numberButton('4')" class="btn num" id="four">4</div>
+				<div onclick="numberButton('5')" class="btn num" id="five">5</div>
+				<div onclick="numberButton('6')" class="btn num" id="six">6</div>
+				<div onclick="operationButton('-')" class="btn" id="subtract">&#x2212;</div>
+				<div onclick="numberButton('1')" class="btn num" id="one">1</div>
+				<div onclick="numberButton('2')" class="btn num" id="two">2</div>
+				<div onclick="numberButton('3')" class="btn num" id="three">3</div>
+				<div onclick="operationButton('+')" class="btn" id="add">&#x2b;</div>
+				<div onclick="currentOp('sign')" class="btn sig" id="sign">&#xb1;</div>
+				<div onclick="numberButton('0')" class="btn num" id="zero">0</div>
+				<div onclick="decimal()" id="decimal" class="btn num" id="decimal">.</div>
+				<div onclick="equalsButton()" id="equals" class="btn eq" id="equals">=</div>
+			</section>
+		</div>
+	</div>
+	<script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
