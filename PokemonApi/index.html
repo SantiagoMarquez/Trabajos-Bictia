@@ -21,10 +21,20 @@
   <!-- Lista de personajes -->
   <div class="container position-relative">
 
-
-    <div class="row " id="datosPokemon">
-
-    </div>
+    <form id="formPokemon">
+      <div class="form-group">
+        <label for="pokedex">ID o Nombre del Pokemon</label>
+        <input type="text" id="idPokemon" class="form-control" placeholder="Id o Nombre">
+      </div>
+      <button type="submit" class="btn btn-success " id="button" style="margin-bottom: 20px;">Enviar</button>
+    </form>
+    <form id="borrarForm">
+      <button type="submit" class="btn btn-danger " id="button2">Borrar</button>
+    </form>
+    <br>
+    <div class="row space" id="datosPokemon1"></div>
+    <hr>
+    <div class="row " id="datosPokemon"></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

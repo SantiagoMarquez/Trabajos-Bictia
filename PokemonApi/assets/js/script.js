@@ -1,6 +1,18 @@
 //url de la api
 const API = "https://pokeapi.co/api/v2/pokemon/";
 let aux2 = []
+let aux3 = []
+const idPokemon = document.getElementById('idPokemon')
+const formPokemon = document.getElementById('formPokemon')
+// const borrar = document.getElementById('button2')
+// const borrarForm = document.getElementById('borrarForm')
+
+
+formPokemon.addEventListener('submit', (e) => {
+  e.preventDefault()
+  getPokemon(idPokemon.value);
+})
+
 const getData = (api) => {
   return fetch(api)
     .then((response) => response.json())
@@ -13,12 +25,15 @@ const getData = (api) => {
     });
 };
 
+
+////////////////////////////////////////////////////// lista
 function llenarDatos(data) {
   data.results.forEach((pj) => {
     aux = pj.url
     return fetch(aux)
       .then((response) => response.json())
       .then((json) => {
+        console.log();
         llenarDatos2(json)
       })
   });
@@ -27,8 +42,8 @@ function llenarDatos(data) {
 function llenarDatos2(data) {
   let html = ""
   html += '<div class="col datosPokemon">'
-  html += '<div class="card" style="width: 10rem; padding: 10px;">'
-  html += `<img src="${data.sprites.other.dream_world.front_default}" class="card-img-top" alt="...">`
+  html += '<div class="card" style="width: 10rem;">'
+  html += `<img src="${data.sprites.other.dream_world.front_default}" class="card-img-top" alt="..." style="padding: 10px;">`
   html += '<div class="card-body ">'
   html += `<h5 class="card-title text-center">${data.name}</h5>`
   html += `<p class="card-text">Altura :${data.height}</p>`
@@ -38,6 +53,38 @@ function llenarDatos2(data) {
   html += '</div>'
   aux2.push(html)
   document.getElementById("datosPokemon").innerHTML = aux2
+}
+
+////////////////////////////////////////////////////// Pokemon individual
+
+const getPokemon = (id) => {
+  return fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    .then((response) => response.json())
+    .then((json) => {
+      // console.log("Pokemon -->", json);
+      llenarDatos3(json)
+    })
+    .catch((error) => {
+      console.log("Error: ", error)
+      alert("Error!", "Debes ingresar un ID o Nombre de Pokemon valido", "error");
+
+    })
+}
+
+function llenarDatos3(data) {
+  let html = ""
+  html += '<div class="col datosPokemon">'
+  html += '<div class="card" style="width: 10rem;">'
+  html += `<img src="${data.sprites.other.dream_world.front_default}" class="card-img-top" alt="..." style="padding: 10px;">`
+  html += '<div class="card-body ">'
+  html += `<h5 class="card-title text-center">${data.name}</h5>`
+  html += `<p class="card-text">Altura :${data.height}</p>`
+  html += `<p class="card-text">Peso :${data.weight}</p>`
+  html += '</div>'
+  html += '</div>'
+  html += '</div>'
+  aux3.push(html)
+  document.getElementById("datosPokemon1").innerHTML = aux3
 }
 
 getData(API)
